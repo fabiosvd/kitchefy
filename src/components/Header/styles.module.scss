@@ -1,8 +1,6 @@
 .headerContainer {
   height: 5rem;
-  box-shadow: rgb(0 0 0 / 6%) 0px 10px 15px 0px;
-  background-color: #f6f0ea;
-  background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+  border-bottom: 1px solid #edd6c4;
 }
 
 .headerContent {
@@ -47,16 +45,16 @@
         font-weight: bold;
       }
 
-      &.active::after {
-        content: '';
-        height: 3px;
-        border-radius: 3px 3px 0 0;
-        width: 100%;
-        position: absolute;
-        bottom: 1px;
-        left: 0;
-        background: var(--yellow-500);
-      }
+      // &.active::after {
+      //   content: '';
+      //   height: 3px;
+      //   border-radius: 3px 3px 0 0;
+      //   width: 100%;
+      //   position: absolute;
+      //   bottom: 1px;
+      //   left: 0;
+      //   background: var(--yellow-500);
+      // }
     }
   }
 
