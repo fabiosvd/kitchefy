@@ -1,0 +1,66 @@
+.headerContainer {
+  height: 5rem;
+  box-shadow: rgb(0 0 0 / 6%) 0px 10px 15px 0px;
+  background-color: #f6f0ea;
+  background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+}
+
+.headerContent {
+  max-width: 1120px;
+  height: 5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--orange-500);
+    font-family: 'Mea Culpa';
+  }
+
+  nav {
+    margin-left: 5rem;
+    height: 5rem;
+
+    a {
+      display: inline-block;
+      position: relative;
+      padding: 0 0.5rem;
+      line-height: 5rem;
+      color: var (--gray-300);
+
+      transition: color 0.2s;
+
+      & + a {
+        margin-left: 2rem;
+      }
+
+      &:hover {
+        color: var(--gray-800);
+      }
+
+      &.active {
+        color: var(--gray-800);
+        font-weight: bold;
+      }
+
+      &.active::after {
+        content: '';
+        height: 3px;
+        border-radius: 3px 3px 0 0;
+        width: 100%;
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        background: var(--yellow-500);
+      }
+    }
+  }
+
+  button {
+    margin-left: auto;
+  }
+}
