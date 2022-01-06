@@ -31,7 +31,7 @@ export default function Home({ product }: HomeProps) {
           <SubscribeButton priceId={product.priceId} />
         </section>
 
-        <img src="/images/chef.svg" alt="" />
+        <img src="/images/chef.png" alt="" />
       </main>
     </>
   );

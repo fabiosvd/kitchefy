@@ -1,6 +1,6 @@
 .headerContainer {
   height: 5rem;
-  border-bottom: 1px solid #edd6c4;
+  border-bottom: 1px solid var(--gray-700);
 }
 
 .headerContent {
@@ -27,8 +27,9 @@
       display: inline-block;
       position: relative;
       padding: 0 0.5rem;
+      height: 5rem;
       line-height: 5rem;
-      color: var (--gray-300);
+      color: var(--gray-300);
 
       transition: color 0.2s;
 
@@ -37,24 +38,24 @@
       }
 
       &:hover {
-        color: var(--gray-800);
+        color: var(--white);
       }
 
       &.active {
-        color: var(--gray-800);
+        color: var(--white);
         font-weight: bold;
       }
 
-      // &.active::after {
-      //   content: '';
-      //   height: 3px;
-      //   border-radius: 3px 3px 0 0;
-      //   width: 100%;
-      //   position: absolute;
-      //   bottom: 1px;
-      //   left: 0;
-      //   background: var(--yellow-500);
-      // }
+      &.active::after {
+        content: '';
+        height: 3px;
+        border-radius: 3px 3px 0 0;
+        width: 100%;
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        background: var(--yellow-500);
+      }
     }
   }
 
