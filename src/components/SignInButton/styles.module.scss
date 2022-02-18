@@ -31,3 +31,20 @@
     filter: brightness(0.8);
   }
 }
+
+@media (max-width: 550px) {
+  .signInButton {
+    height: 0rem;
+    border: none;
+    padding: 0;
+
+    span {
+      display: none;
+    }
+    svg {
+      margin: 0;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

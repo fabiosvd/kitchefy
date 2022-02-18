@@ -63,3 +63,10 @@
     margin-left: auto;
   }
 }
+
+@media (max-width: 600px) {
+  .signInButton {
+    padding: 0 0.5rem;
+    display: none;
+  }
+}
